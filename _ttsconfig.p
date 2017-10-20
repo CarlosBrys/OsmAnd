@@ -1,7 +1,3 @@
-%
-% Versión personalizada de las indicaciones de voz en jerga argentina (argento)
-%
-
 % for turbo-prolog
 :- op('--', xfy, 500).
 % for swi-prolog
@@ -11,7 +7,7 @@ version(103).
 tts :- version(X), X > 99.
 voice :- version(X), X < 99.
 
-language('es-ar').
+language('es_AR').
 % fest_language('').
 
 % IMPLEMENTED (X) or MISSING ( ) FEATURES, (N/A) if not needed in this language:
@@ -28,58 +24,60 @@ language('es-ar').
 %% STRINGS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ROUTE CALCULATED
-string('route_is.ogg', 'La ruta tiene').
+string('route_is.ogg', 'La ruta tiene ').
 string('route_calculate.ogg', 'Recalculando ').
-string('distance.ogg', ', distancia').
+string('distance.ogg', ', distancia ').
 
 % LEFT/RIGHT
 %string('prepare.ogg', 'Preparáte para').
 string('after.ogg', 'después de ').
 string('in.ogg', 'en ').
+
 string('left.ogg', 'doblá a la izquierda').
 string('left_sh.ogg', 'doblá cerrado a la izquierda').
-string('left_sl.ogg', 'doblá un poco a la izquierda').
+string('left_sl.ogg', 'doblá un cacho a la izquierda').
 string('right.ogg', 'doblá a la derecha').
 string('right_sh.ogg', 'doblá cerrado a la derecha').
-string('right_sl.ogg', 'doblá un poco a la derecha').
+string('right_sl.ogg', 'doblá un cacho a la derecha').
 string('left_keep.ogg', 'mantenéte a la izquierda').
 string('right_keep.ogg', 'mantenéte a la derecha').
-string('left_bear.ogg', 'mantenéte a la izquierda'). % in English the same as left_keep, may be different in other languages
-string('right_bear.ogg', 'mantenéte a la derecha'). % in English the same as right_keep, may be different in other languages
+string('left_bear.ogg', 'mantenéte a la izquierda').   % in English the same as left_keep, may be different in other languages
+string('right_bear.ogg', 'mantenéte a la derecha').    % in English the same as right_keep, may be different in other languages
 
 % U-TURNS
 string('make_uturn.ogg', 'Volvé que te pasaste').
-string('make_uturn_wp.ogg', 'Cuando puedas, volvé').
+string('make_uturn_wp.ogg', 'Cuando tengas ganas, volvé').
 
 % ROUNDABOUTS
-%string('prepare_roundabout.ogg', 'Preparáte para entrar en la rotonda luego de').
-string('prepare_roundabout.ogg', 'Preparáte para entrar en la rotonda después de ').
+string('prepare_roundabout.ogg', 'Preparáte para entrar en la rotonda ').
 string('roundabout.ogg', 'entrá en la rotonda').
 string('then.ogg', ', depués').
-string('and.ogg', 'y').
+string('and.ogg', ' y ').
 string('take.ogg', 'agarrá la').
 string('exit.ogg', 'salida').
-string('1st.ogg', 'primera').
-string('2nd.ogg', 'segunda').
-string('3rd.ogg', 'tercera').
-string('4th.ogg', 'cuarta').
-string('5th.ogg', 'quinta').
-string('6th.ogg', 'sexta').
-string('7th.ogg', 'séptima').
-string('8th.ogg', 'octava').
-string('9th.ogg', 'novena').
-string('10th.ogg', 'décima').
-string('11th.ogg', 'undécima').
-string('12th.ogg', 'duodécima').
-string('13th.ogg', 'decimotercera').
-string('14th.ogg', 'decimocuarta').
-string('15th.ogg', 'decimoquinta').
-string('16th.ogg', 'decimosexta').
-string('17th.ogg', 'decimoséptima').
+
+string('1st.ogg', 'primera ').
+string('2nd.ogg', 'segunda ').
+string('3rd.ogg', 'tercera ').
+string('4th.ogg', 'cuarta ').
+string('5th.ogg', 'quinta ').
+string('6th.ogg', 'sexta ').
+string('7th.ogg', 'séptima ').
+string('8th.ogg', 'octava ').
+string('9th.ogg', 'novena ').
+string('10th.ogg', 'décima ').
+string('11th.ogg', 'undécima ').
+string('12th.ogg', 'duodécima ').
+string('13th.ogg', 'decimotercera ').
+string('14th.ogg', 'decimocuarta ').
+string('15th.ogg', 'decimoquinta ').
+string('16th.ogg', 'decimosexta ').
+string('17th.ogg', 'decimoséptima ').
 
 % STRAIGHT/FOLLOW
 string('go_ahead.ogg', 'Seguí derecho').
-string('follow.ogg', 'Seguí el camino durante').
+%string('follow.ogg', 'Sigue la vía durante').
+string('follow.ogg', 'Seguí por ').
 
 % ARRIVE
 string('and_arrive_destination.ogg', 'y vas a llegar a donde querías').
@@ -96,7 +94,7 @@ string('and_arrive_poi.ogg', 'y vas a llegar al P D I ').
 string('reached_poi.ogg', 'ya llegaste al P D I ').
 
 % ATTENTION
-%string('exceed_limit.ogg', 'límite de velocidad excedido ').
+%string('exceed_limit.ogg', 'te pasaste la velocidad máxima ').
 string('exceed_limit.ogg', 'bajá la velocidad a ').
 string('attention.ogg', 'guarda adelante, ').
 string('speed_camera.ogg', 'hay un radar de velocidad ').
@@ -104,38 +102,40 @@ string('border_control.ogg', 'hay un control de frontera ').
 string('railroad_crossing.ogg', 'paso a nivel ').
 string('traffic_calming.ogg', 'hay un lomo de burro o un badén ').
 string('toll_booth.ogg', 'hay una cabina de peaje ').
-string('stop.ogg', 'tenés que parar ').
-string('pedestrian_crosswalk.ogg', 'hay un cruce de gente ').
+string('stop.ogg', 'acá tenés que parar ').
+string('pedestrian_crosswalk.ogg', 'hay un cruce de peatones ').
 
 % OTHER PROMPTS
 string('location_lost.ogg', 'esperá un cachito, se me perdió la señal del G P S').
 string('location_recovered.ogg', 'listo, ya recuperé la señal del G P S ').
-string('off_route.ogg', 'te fuiste al carajo').
-string('back_on_route.ogg', 'ahora sí, volviste a la ruta').
+string('off_route.ogg', 'te fuiste al re carajo').
+string('back_on_route.ogg', 'ya volviste a la ruta').
 
 % STREET NAME PREPOSITIONS
-string('onto.ogg', 'en dirección a ').
-string('on.ogg', 'en').
-string('to.ogg', 'hasta').
-string('toward.ogg', 'hacia ').
+%string('onto.ogg', 'onto ').   % unused in Spanish
+string('on.ogg', 'en ').        % duplicated with 'in.ogg' in Spanish
+string('to.ogg', 'hacia ').     % duplicated with 'toward.ogg' in Spanish
+string('toward.ogg', 'hacia '). % duplicated with 'to.ogg' in Spanish
 
 % DISTANCE UNIT SUPPORT
 string('meters.ogg', 'metros').
-string('around_1_kilometer.ogg', 'másomeno un kilómetro').
-string('around.ogg', 'másomeno ').
+string('around_1_kilometer.ogg', 'más o meno un kilómetro').
+string('around.ogg', 'más o meno ').
 string('kilometers.ogg', 'kilómetros').
+
 string('feet.ogg', 'pies').
 string('1_tenth_of_a_mile.ogg', 'una décima de milla').
 string('tenths_of_a_mile.ogg', 'décimas de milla').
 string('around_1_mile.ogg', 'alrededor de una milla').
 string('miles.ogg', 'millas').
+
 string('yards.ogg', 'yardas').
 
 % TIME SUPPORT
-string('time.ogg', 'vas a tardar ').
+string('time.ogg', 'vas a tardar como ').
 string('1_hour.ogg', 'una hora ').
 string('hours.ogg', 'horas ').
-string('less_a_minute.ogg', 'menos de un minuto').
+string('less_a_minute.ogg', 'menos de un minuto ').
 string('1_minute.ogg', 'un minuto').
 string('minutes.ogg', 'minutos').
 
@@ -144,9 +144,10 @@ string('20_and.ogg', 'veinti').
 
 %% COMMAND BUILDING / WORD ORDER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-route_new_calc(Dist, Time) -- ['route_is.ogg', D, ', ', 'time.ogg', T] :- distance(Dist) -- D, time(Time) -- T.
-route_recalc(_Dist, _Time) -- ['route_calculate.ogg'] :- appMode('car').
-route_recalc(Dist, Time) -- ['route_calculate.ogg', ', ', 'distance.ogg', D, ', ', 'time.ogg', T] :- distance(Dist) -- D, time(Time) -- T.
+route_new_calc(Dist, Time) -- ['route_is.ogg', D, ', ', 'time.ogg', T, '. '] :- distance(Dist) -- D, time(Time) -- T.
+route_recalc(_Dist, _Time) -- ['route_calculate.ogg', '. '] :- appMode('car').
+route_recalc(Dist, Time) -- ['route_calculate.ogg', ', ', 'distance.ogg', D, ', ', 'time.ogg', T, '. '] :- distance(Dist) -- D, time(Time) -- T.
+
 turn('left', ['left.ogg']).
 turn('left_sh', ['left_sh.ogg']).
 turn('left_sl', ['left_sl.ogg']).
@@ -184,35 +185,45 @@ follow_street(Street, ['on.ogg', SName]) :- tts, Street = voice([R, S, _],[R, S,
 follow_street(Street, ['on.ogg', SName]) :- tts, Street = voice([R, '', _],[R, _, _]), assemble_street_name(Street, SName).
 follow_street(Street, ['to.ogg', SName]) :- tts, not(Street = voice([R, S, _],[R, S, _])), assemble_street_name(Street, SName).
 follow_street(_Street, []) :- not(tts).
-prepare_turn(Turn, Dist, _Street) -- ['on.ogg', D, M | Sgen] :- distance(Dist) -- D, turn(Turn, M), turn_street(Street, Sgen).
+
+prepare_turn(Turn, Dist, Street) -- ['on.ogg', D, M | Sgen] :- distance(Dist) -- D, turn(Turn, M), turn_street(Street, Sgen).
 turn(Turn, Dist, Street) -- ['in.ogg', D, M | Sgen] :- distance(Dist) -- D, turn(Turn, M), turn_street(Street, Sgen).
 turn(Turn, Street) -- [M | Sgen] :- turn(Turn, M), turn_street(Street, Sgen).
+
 prepare_make_ut(Dist, Street) -- ['on.ogg', D, 'make_uturn.ogg' | Sgen] :- distance(Dist) -- D, turn_street(Street, Sgen).
-make_ut(Dist, Street) -- ['on.ogg', D, 'make_uturn.ogg' | Sgen] :- distance(Dist) -- D, turn_street(Street, Sgen).
+make_ut(Dist, Street) --  ['on.ogg', D, 'make_uturn.ogg' | Sgen] :- distance(Dist) -- D, turn_street(Street, Sgen).
 make_ut(Street) -- ['make_uturn.ogg' | Sgen] :- turn_street(Street, Sgen).
 make_ut_wp -- ['make_uturn_wp.ogg'].
+
 prepare_roundabout(Dist, _Exit, _Street) -- ['on.ogg', D , 'prepare_roundabout.ogg'] :- distance(Dist) -- D.
 roundabout(Dist, _Angle, Exit, Street) -- ['on.ogg', D, 'roundabout.ogg', 'and.ogg', 'take.ogg', E, 'exit.ogg' | Sgen] :- distance(Dist) -- D, nth(Exit, E), turn_street(Street, Sgen).
 roundabout(_Angle, Exit, Street) -- ['take.ogg', E, 'exit.ogg' | Sgen] :- nth(Exit, E), turn_street(Street, Sgen).
+
 go_ahead -- ['go_ahead.ogg'].
-go_ahead(Dist, Street) -- ['follow.ogg', D | Sgen]:- distance(Dist) -- D, follow_street(Street, Sgen).
+go_ahead(Dist, Street) -- ['follow.ogg', D | Sgen] :- distance(Dist) -- D, follow_street(Street, Sgen).
+
+
 then -- ['then.ogg'].
 name(D, [D]) :- tts.
 name(_D, []) :- not(tts).
+
 and_arrive_destination(D) -- ['and_arrive_destination.ogg'|Ds] :- name(D, Ds).
 reached_destination(D) -- ['reached_destination.ogg'|Ds] :- name(D, Ds).
 and_arrive_intermediate(D) -- ['and_arrive_intermediate.ogg'|Ds] :- name(D, Ds).
 reached_intermediate(D) -- ['reached_intermediate.ogg'|Ds] :- name(D, Ds).
+
 and_arrive_waypoint(D) -- ['and_arrive_waypoint.ogg'|Ds] :- name(D, Ds).
 reached_waypoint(D) -- ['reached_waypoint.ogg'|Ds] :- name(D, Ds).
 and_arrive_favorite(D) -- ['and_arrive_favorite.ogg'|Ds] :- name(D, Ds).
 reached_favorite(D) -- ['reached_favorite.ogg'|Ds] :- name(D, Ds).
 and_arrive_poi(D) -- ['and_arrive_poi.ogg'|Ds] :- name(D, Ds).
 reached_poi(D) -- ['reached_poi.ogg'|Ds] :- name(D, Ds).
+
 location_lost -- ['location_lost.ogg'].
 location_recovered -- ['location_recovered.ogg'].
 off_route(Dist) -- ['off_route.ogg', D] :- distance(Dist) -- D.
 back_on_route -- ['back_on_route.ogg'].
+
 % TRAFFIC WARNINGS
 speed_alarm(MaxSpeed, _Speed) -- ['exceed_limit.ogg', I] :- pnumber(MaxSpeed, I).
 attention(Type) -- ['attention.ogg', W] :- warning(Type, W).
@@ -226,7 +237,9 @@ warning('STOP', 'stop.ogg').
 warning('PEDESTRIAN', 'pedestrian_crosswalk.ogg').
 warning('MAXIMUM', '').
 warning(Type, '') :- not(Type = 'SPEED_CAMERA'; Type = 'SPEED_LIMIT'; Type = 'BORDER_CONTROL'; Type = 'RAILWAY'; Type = 'TRAFFIC_CALMING'; Type = 'TOLL_BOOTH'; Type = 'STOP'; Type = 'PEDESTRIAN'; Type = 'MAXIMUM').
-%%
+
+
+%% 
 nth(1, '1st.ogg').
 nth(2, '2nd.ogg').
 nth(3, '3rd.ogg').
@@ -245,6 +258,7 @@ nth(15, '15th.ogg').
 nth(16, '16th.ogg').
 nth(17, '17th.ogg').
 
+
 %% resolve command main method
 %% if you are familar with Prolog you can input specific to the whole mechanism,
 %% by adding exception cases.
@@ -260,9 +274,11 @@ resolve(X, Y) :- resolve_impl(X,Z), flatten(Z, Y).
 resolve_impl([],[]).
 resolve_impl([X|Rest], List) :- resolve_impl(Rest, Tail), ((X -- L) -> append(L, Tail, List); List = Tail).
 
+
 % handling alternatives
 [X|_Y] -- T :- (X -- T),!.
 [_X|Y] -- T :- (Y -- T).
+
 
 pnumber(X, Y) :- tts, !, num_atom(X, Y).
 pnumber(X, Ogg) :- num_atom(X, A), atom_concat(A, '.ogg', Ogg).
@@ -277,6 +293,7 @@ time(Sec) -- [H, Ogg, 'minutes.ogg'] :- tts, S is round(Sec/60.0), hours(S, H), 
 time(Sec) -- [Ogg, 'minutes.ogg'] :- not(tts), Sec < 300, St is Sec/60, pnumber(St, Ogg).
 time(Sec) -- [H, Ogg, 'minutes.ogg'] :- not(tts), S is round(Sec/300.0) * 5, St is S mod 60, St > 0, hours(S, H), pnumber(St, Ogg).
 time(Sec) -- [H] :- not(tts), S is round(Sec/300.0) * 5, hours(S, H), St is S mod 60.
+
 %%% distance measure
 distance(Dist) -- D :- measure('km-m'), distance_km(Dist) -- D.
 distance(Dist) -- D :- measure('mi-f'), distance_mi_f(Dist) -- D.
@@ -284,42 +301,48 @@ distance(Dist) -- D :- measure('mi-y'), distance_mi_y(Dist) -- D.
 distance(Dist) -- D :- measure('mi-m'), distance_mi_m(Dist) -- D.
 
 %%% distance measure km/m
-distance_km(Dist) -- [ X, 'meters.ogg'] :- Dist < 100, D is round(Dist/10.0)*10, dist(D, X).
-distance_km(Dist) -- [ X, 'meters.ogg'] :- Dist < 1000, D is round(2*Dist/100.0)*50, dist(D, X).
-distance_km(Dist) -- ['around_1_kilometer.ogg'] :- Dist < 1500.
-distance_km(Dist) -- ['around.ogg', X, 'kilometers.ogg'] :- Dist < 10000, D is round(Dist/1000.0), dist(D, X).
-distance_km(Dist) -- [ X, 'kilometers.ogg'] :- D is round(Dist/1000.0), dist(D, X).
+distance_km(Dist) -- [ X, 'meters.ogg']                  :- Dist < 100,   D is round(Dist/10.0)*10,           dist(D, X).
+distance_km(Dist) -- [ X, 'meters.ogg']                  :- Dist < 1000,  D is round(2*Dist/100.0)*50,        dist(D, X).
+distance_km(Dist) -- ['around_1_kilometer.ogg']          :- Dist < 1500.
+distance_km(Dist) -- ['around.ogg', X, 'kilometers.ogg'] :- Dist < 10000, D is round(Dist/1000.0),            dist(D, X).
+distance_km(Dist) -- [ X, 'kilometers.ogg']              :-               D is round(Dist/1000.0),            dist(D, X).
 
 %%% distance measure mi/f
-distance_mi_f(Dist) -- [ X, 'feet.ogg'] :- Dist < 160, D is round(2*Dist/100.0/0.3048)*50, dist(D, X).
-distance_mi_f(Dist) -- ['1_tenth_of_a_mile.ogg'] :- Dist < 241.
-distance_mi_f(Dist) -- [ X, 'tenths_of_a_mile.ogg'] :- Dist < 1529, D is round(Dist/161.0), dist(D, X).
-distance_mi_f(Dist) -- ['around_1_mile.ogg'] :- Dist < 2414.
-distance_mi_f(Dist) -- ['around.ogg', X, 'miles.ogg'] :- Dist < 16093, D is round(Dist/1609.3), dist(D, X).
-distance_mi_f(Dist) -- [ X, 'miles.ogg'] :- D is round(Dist/1609.3), dist(D, X).
+distance_mi_f(Dist) -- [ X, 'feet.ogg']                  :- Dist < 160,   D is round(2*Dist/100.0/0.3048)*50, dist(D, X).
+distance_mi_f(Dist) -- ['1_tenth_of_a_mile.ogg']         :- Dist < 241.
+distance_mi_f(Dist) -- [ X, 'tenths_of_a_mile.ogg']      :- Dist < 1529,  D is round(Dist/161.0),             dist(D, X).
+distance_mi_f(Dist) -- ['around_1_mile.ogg']             :- Dist < 2414.
+distance_mi_f(Dist) -- ['around.ogg', X, 'miles.ogg']    :- Dist < 16093, D is round(Dist/1609.3),            dist(D, X).
+distance_mi_f(Dist) -- [ X, 'miles.ogg']                 :-               D is round(Dist/1609.3),            dist(D, X).
 
 %%% distance measure mi/y
-distance_mi_y(Dist) -- [ X, 'yards.ogg'] :- Dist < 100, D is round(Dist/10.0/0.9144)*10, dist(D, X).
-distance_mi_y(Dist) -- [ X, 'yards.ogg'] :- Dist < 1300, D is round(2*Dist/100.0/0.9144)*50, dist(D, X).
-distance_mi_y(Dist) -- ['around_1_mile.ogg'] :- Dist < 2414.
-distance_mi_y(Dist) -- ['around.ogg', X, 'miles.ogg'] :- Dist < 16093, D is round(Dist/1609.3), dist(D, X).
-distance_mi_y(Dist) -- [ X, 'miles.ogg'] :- D is round(Dist/1609.3), dist(D, X).
+distance_mi_y(Dist) -- [ X, 'yards.ogg']                 :- Dist < 100,   D is round(Dist/10.0/0.9144)*10,    dist(D, X).
+distance_mi_y(Dist) -- [ X, 'yards.ogg']                 :- Dist < 1300,  D is round(2*Dist/100.0/0.9144)*50, dist(D, X).
+distance_mi_y(Dist) -- ['around_1_mile.ogg']             :- Dist < 2414.
+distance_mi_y(Dist) -- ['around.ogg', X, 'miles.ogg']    :- Dist < 16093, D is round(Dist/1609.3),            dist(D, X).
+distance_mi_y(Dist) -- [ X, 'miles.ogg']                 :-               D is round(Dist/1609.3),            dist(D, X).
 
 %%% distance measure mi/m
-distance_mi_m(Dist) -- [ X, 'meters.ogg'] :- Dist < 100, D is round(Dist/10.0)*10, dist(D, X).
-distance_mi_m(Dist) -- [ X, 'meters.ogg'] :- Dist < 1300, D is round(2*Dist/100.0)*50, dist(D, X).
-distance_mi_m(Dist) -- ['around_1_mile.ogg'] :- Dist < 2414.
-distance_mi_m(Dist) -- ['around.ogg', X, 'miles.ogg'] :- Dist < 16093, D is round(Dist/1609.3), dist(D, X).
-distance_mi_m(Dist) -- [ X, 'miles.ogg'] :- D is round(Dist/1609.3), dist(D, X).
+distance_mi_m(Dist) -- [ X, 'meters.ogg']                :- Dist < 100,   D is round(Dist/10.0)*10,           dist(D, X).
+distance_mi_m(Dist) -- [ X, 'meters.ogg']                :- Dist < 1300,  D is round(2*Dist/100.0)*50,        dist(D, X).
+distance_mi_m(Dist) -- ['around_1_mile.ogg']             :- Dist < 2414.
+distance_mi_m(Dist) -- ['around.ogg', X, 'miles.ogg']    :- Dist < 16093, D is round(Dist/1609.3),            dist(D, X).
+distance_mi_m(Dist) -- [ X, 'miles.ogg']                 :-               D is round(Dist/1609.3),            dist(D, X).
+
+
 interval(St, St, End, _Step) :- St =< End.
 interval(T, St, End, Step) :- interval(Init, St, End, Step), T is Init + Step, (T =< End -> true; !, fail).
+
 interval(X, St, End) :- interval(X, St, End, 1).
+
 string(Ogg, A) :- voice_generation, interval(X, 1, 19), atom_number(A, X), atom_concat(A, '.ogg', Ogg).
 string(Ogg, A) :- voice_generation, interval(X, 20, 95, 5), atom_number(A, X), atom_concat(A, '.ogg', Ogg).
 string(Ogg, A) :- voice_generation, interval(X, 100, 140, 10), atom_number(A, X), atom_concat(A, '.ogg', Ogg).
 string(Ogg, A) :- voice_generation, interval(X, 150, 950, 50), atom_number(A, X), atom_concat(A, '.ogg', Ogg).
 string(Ogg, A) :- voice_generation, interval(X, 1000, 9000, 1000), atom_number(A, X), atom_concat(A, '.ogg', Ogg).
+
 dist(X, Y) :- tts, !, num_atom(X, Y).
+
 dist(0, []) :- !.
 dist(X, [Ogg]) :- X < 20, !, pnumber(X, Ogg).
 dist(X, [Ogg]) :- X < 1000, 0 is X mod 50, !, num_atom(X, A), atom_concat(A, '.ogg', Ogg).
@@ -339,13 +362,13 @@ dist(D, ['80.ogg']) :- !.
 dist(D, ['80.ogg', 'and.ogg'|L]) :- D < 90, Ts is D - 80, !, dist(Ts, L).
 dist(D, ['90.ogg']) :- !.
 dist(D, ['90.ogg', 'and.ogg'|L]) :- D < 100, Ts is D - 90, !, dist(Ts, L).
-dist(D, ['100.ogg'|L]) :- D < 200, Ts is D - 100, !, dist(Ts, L).
-dist(D, ['200.ogg'|L]) :- D < 300, Ts is D - 200, !, dist(Ts, L).
-dist(D, ['300.ogg'|L]) :- D < 400, Ts is D - 300, !, dist(Ts, L).
-dist(D, ['400.ogg'|L]) :- D < 500, Ts is D - 400, !, dist(Ts, L).
-dist(D, ['500.ogg'|L]) :- D < 600, Ts is D - 500, !, dist(Ts, L).
-dist(D, ['600.ogg'|L]) :- D < 700, Ts is D - 600, !, dist(Ts, L).
-dist(D, ['700.ogg'|L]) :- D < 800, Ts is D - 700, !, dist(Ts, L).
-dist(D, ['800.ogg'|L]) :- D < 900, Ts is D - 800, !, dist(Ts, L).
-dist(D, ['900.ogg'|L]) :- D < 1000, Ts is D - 900, !, dist(Ts, L).
+dist(D, ['100.ogg'|L]) :-  D < 200, Ts is D - 100,  !, dist(Ts, L).
+dist(D, ['200.ogg'|L]) :-  D < 300, Ts is D - 200,  !, dist(Ts, L).
+dist(D, ['300.ogg'|L]) :-  D < 400, Ts is D - 300,  !, dist(Ts, L).
+dist(D, ['400.ogg'|L]) :-  D < 500, Ts is D - 400,  !, dist(Ts, L).
+dist(D, ['500.ogg'|L]) :-  D < 600, Ts is D - 500,  !, dist(Ts, L).
+dist(D, ['600.ogg'|L]) :-  D < 700, Ts is D - 600,  !, dist(Ts, L).
+dist(D, ['700.ogg'|L]) :-  D < 800, Ts is D - 700,  !, dist(Ts, L).
+dist(D, ['800.ogg'|L]) :-  D < 900, Ts is D - 800,  !, dist(Ts, L).
+dist(D, ['900.ogg'|L]) :-  D < 1000, Ts is D - 900, !, dist(Ts, L).
 dist(D, ['1000.ogg'|L]):- Ts is D - 1000, !, dist(Ts, L).

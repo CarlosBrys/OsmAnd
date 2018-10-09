@@ -20,7 +20,7 @@ function populateDictionary(tts) {
 	dictionary["distance"] = tts ? ", distancia " : "distance.ogg";
 
 	// LEFT/RIGHT
-	//dictionary["prepare"] = tts ? "Prepárate para" : "prepare.ogg";
+	//dictionary["prepare"] = tts ? "Preparáte para" : "prepare.ogg";
 	dictionary["after"] = tts ? "despué de " : "after.ogg";
 	dictionary["in"] = tts ? "en " : "in.ogg"; // duplicated with 'on.ogg' in Spanish
 
@@ -67,13 +67,13 @@ function populateDictionary(tts) {
 
 	// STRAIGHT/FOLLOW
 	dictionary["go_ahead"] = tts ? "Seguí derecho" : "go_ahead.ogg";
-	//dictionary["follow"] = tts ? "Sigue la vía durante" : "follow.ogg";
+	//dictionary["follow"] = tts ? "Seguí el camino por" : "follow.ogg";
 	dictionary["follow"] = tts ? "Seguí por " : "follow.ogg";  // 'Follow the course of the road for' perceived as too chatty by many users
 
 	// ARRIVE
 	dictionary["and_arrive_destination"] = tts ? "y vas a llegar a donde querías  " : "and_arrive_destination.ogg";
 	dictionary["reached_destination"] = tts ? "ya llegaste  " : "reached_destination.ogg";
-	dictionary["and_arrive_intermediate"] = tts ? "y vas a llagar al punto intermedio " : "and_arrive_intermediate.ogg";
+	dictionary["and_arrive_intermediate"] = tts ? "y vas a llegar al punto intermedio " : "and_arrive_intermediate.ogg";
 	dictionary["reached_intermediate"] = tts ? "ya llegaste al punto intermedio " : "reached_intermediate.ogg";
 
 	// NEARBY POINTS
@@ -89,9 +89,9 @@ function populateDictionary(tts) {
 	dictionary["exceed_limit"] = tts ? "aflojá la pata del acelerador que vas muy rápido " : "exceed_limit.ogg";
 	dictionary["attention"] = tts ? "guarda adelante, " : "attention.ogg";
 	dictionary["speed_camera"] = tts ? "hay un radar alcahuete" : "speed_camera.ogg";
-	dictionary["border_control"] = tts ? "control fronterizo" : "border_control.ogg";
-	dictionary["railroad_crossing"] = tts ? "cruza el tren" : "railroad_crossing.ogg";
-	dictionary["traffic_calming"] = tts ? "lomo de burro" : "traffic_calming.ogg";
+	dictionary["border_control"] = tts ? "control de frontera" : "border_control.ogg";
+	dictionary["railroad_crossing"] = tts ? "que cruza el tren" : "railroad_crossing.ogg";
+	dictionary["traffic_calming"] = tts ? "hay un lomo de burro" : "traffic_calming.ogg";
 	dictionary["toll_booth"] = tts ? "tenés que pagar el pillaje" : "toll_booth.ogg";
 	dictionary["stop"] = tts ? "tenés que parar" : "stop.ogg";
 	dictionary["pedestrian_crosswalk"] = tts ? "cruce de gente : "pedestrian_crosswalk.ogg";
@@ -101,7 +101,7 @@ function populateDictionary(tts) {
 	dictionary["location_lost"] = tts ? "esperá un cachito, que se me perdió la señal del yipiés" : "location_lost.ogg";
 	dictionary["location_recovered"] = tts ? "listo, ya tengo señal de yipiés" : "location_recovered.ogg";
 	dictionary["off_route"] = tts ? "te fuiste al carajo" : "off_route.ogg";
-	dictionary["back_on_route"] = tts ? "ya era hora que vuelas al camino" : "back_on_route.ogg";
+	dictionary["back_on_route"] = tts ? "ya era hora que vuelvas al camino" : "back_on_route.ogg";
 
 	// STREET NAME PREPOSITIONS
 	//dictionary["onto"] = tts ? "onto " : "onto.ogg";   // unused in Spanish

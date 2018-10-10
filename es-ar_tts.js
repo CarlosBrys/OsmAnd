@@ -95,7 +95,7 @@ function populateDictionary(tts) {
 	dictionary["traffic_calming"] = tts ? "hay un lomo de burro" : "traffic_calming.ogg";
 	dictionary["toll_booth"] = tts ? "tenés que pagar el pillaje" : "toll_booth.ogg";
 	dictionary["stop"] = tts ? "tenés que parar" : "stop.ogg";
-	dictionary["pedestrian_crosswalk"] = tts ? "cruce de gente : "pedestrian_crosswalk.ogg";
+	dictionary["pedestrian_crosswalk"] = tts ? "cruce de gente" : "pedestrian_crosswalk.ogg";
 	dictionary["tunnel"] = tts ? "hay un túnel" : "tunnel.ogg";
 
 	// OTHER PROMPTS

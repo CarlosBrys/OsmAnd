@@ -20,10 +20,10 @@ function populateDictionary(tts) {
 	dictionary["distance"] = tts ? ", distancia " : "distance.ogg";
 	
 	// LEFT/RIGHT
-	dictionary["prepare"] = tts ? "Preparáte para" : "prepare.ogg";
-	dictionary["after"] = tts ? "despué " : "after.ogg";
-	dictionary["in"] = tts ? "en " : "in.ogg"; // duplicated with 'on.ogg' in Spanish
-
+	//dictionary["prepare"] = tts ? "Preparáte para" : "prepare.ogg";
+	dictionary["after"] = tts ? "despué de " : "after.ogg";
+	dictionary["in"] = tts ? "en " : "in.ogg";
+	
 	dictionary["left"] = tts ? "doblá a la izquierda" : "left.ogg";
 	dictionary["left_sh"] = tts ? "doblá bien a la izquierda" : "left_sh.ogg";
 	dictionary["left_sl"] = tts ? "doblá un cacho a la izquierda" : "left_sl.ogg";
@@ -34,8 +34,9 @@ function populateDictionary(tts) {
 	dictionary["right_keep"] = tts ? "mantenéte a la derecha" : "right_keep.ogg";
 	dictionary["left_bear"] = tts ? "mantenéte a la izquierda" : "left_bear.ogg";   // in English the same as left_keep, may be different in other languages
 	dictionary["right_bear"] = tts ? "mantenéte a la derecha" : "right_bear.ogg";    // in English the same as right_keep, may be different in other languages
-
+	
 	// U-TURNS
+	dictionary["prepare_make_uturn"] = tts ? "preparáte para pegar la vuelta" : "prepare_make_uturn.ogg";	
 	dictionary["make_uturn"] = tts ? "Volvé, que te pasaste" : "make_uturn.ogg";
 	dictionary["make_uturn_wp"] = tts ? "Cuando se te cante, volvé" : "make_uturn_wp.ogg";
 
@@ -84,7 +85,7 @@ function populateDictionary(tts) {
 	dictionary["reached_poi"] = tts ? "ya llegaste al Punto de Interés " : "reached_poi.ogg";
 
 	// ATTENTION
-	dictionary["exceed_limit"] = tts ? "aflojá la pata del acelerador que vas muy rápido " : "exceed_limit.ogg";
+	dictionary["exceed_limit"] = tts ? "aflojá la pata del acelerador que acá la máxima es " : "exceed_limit.ogg";
 	dictionary["attention"] = tts ? "guarda adelante, " : "attention.ogg";
 	dictionary["speed_camera"] = tts ? "hay un radar alcahuete" : "speed_camera.ogg";
 	dictionary["border_control"] = tts ? "control de frontera" : "border_control.ogg";
@@ -104,31 +105,31 @@ function populateDictionary(tts) {
 	// STREET NAME PREPOSITIONS
 	dictionary["onto"] = tts ? "en la calle " : "onto.ogg";   // unused in Spanish
 	dictionary["on"] = tts ? "en " : "on.ogg";        // duplicated with 'in.ogg' in Spanish
-	dictionary["to"] = tts ? "hacia " : "to.ogg";     // duplicated with 'toward.ogg' in Spanish
+	dictionary["to"] = tts ? "para " : "to.ogg";     // duplicated with 'toward.ogg' in Spanish
 	dictionary["toward"] = tts ? "hacia " : "toward.ogg"; // duplicated with 'to.ogg' in Spanish
 
 	// DISTANCE UNIT SUPPORT
-	dictionary["meters"] = tts ? "metro" : "meters.ogg";
+	dictionary["meters"] = tts ? "metros" : "meters.ogg";
 	dictionary["around_1_kilometer"] = tts ? "másomeno un kilómetro" : "around_1_kilometer.ogg";
 	dictionary["around"] = tts ? "másomeno " : "around.ogg";
-	dictionary["kilometers"] = tts ? "kilómetro" : "kilometers.ogg";
-
+	dictionary["kilometers"] = tts ? "kilómetros" : "kilometers.ogg";
+	
 	dictionary["feet"] = tts ? "pies" : "feet.ogg";
 	dictionary["1_tenth_of_a_mile"] = tts ? "una décima de milla" : "1_tenth_of_a_mile.ogg";
 	dictionary["tenths_of_a_mile"] = tts ? "décimas de milla" : "tenths_of_a_mile.ogg";
-	dictionary["around_1_mile"] = tts ? "alrededor de una milla" : "around_1_mile.ogg";
+	dictionary["around_1_mile"] = tts ? "aproximadamente una milla" : "around_1_mile.ogg";
 	dictionary["miles"] = tts ? "millas" : "miles.ogg";
 	
 	dictionary["yards"] = tts ? "yardas" : "yards.ogg";
 	
 	// TIME SUPPORT
-	dictionary["time"] = tts ? "vas a tardar másomeno " : "time.ogg";
+	dictionary["time"] = tts ? "vas a tardar como " : "time.ogg";
 	dictionary["1_hour"] = tts ? "una hora " : "1_hour.ogg";
 	dictionary["hours"] = tts ? "horas " : "hours.ogg";
-	dictionary["less_a_minute"] = tts ? "meno de un minuto" : "less_a_minute.ogg";
+	dictionary["less_a_minute"] = tts ? "menos de un minuto" : "less_a_minute.ogg";
 	dictionary["1_minute"] = tts ? "un minuto" : "1_minute.ogg";
-	dictionary["minutes"] = tts ? "minuto" : "minutes.ogg";
-
+	dictionary["minutes"] = tts ? "minutos" : "minutes.ogg";
+	
 	// SPECIAL NUMBERS
 	dictionary["20_and"] = tts ? "veinti" : "20_and.ogg";
 }

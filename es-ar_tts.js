@@ -16,7 +16,7 @@ var tts;
 function populateDictionary(tts) {
 // ROUTE CALCULATED
 	dictionary["route_is"] = tts ? "El camino tiene como " : "route_is.ogg";
-	dictionary["route_calculate"] = tts ? "te hice otra ruta" : "route_calculate.ogg";
+	dictionary["route_calculate"] = tts ? "te hice otra ruta de unos " : "route_calculate.ogg";
 	dictionary["distance"] = tts ? ", distancia " : "distance.ogg";
 	
 	// LEFT/RIGHT
@@ -37,13 +37,13 @@ function populateDictionary(tts) {
 	
 	// U-TURNS
 	dictionary["prepare_make_uturn"] = tts ? "preparáte para pegar la vuelta" : "prepare_make_uturn.ogg";	
-	dictionary["make_uturn"] = tts ? "Volvé, que te pasaste" : "make_uturn.ogg";
+	dictionary["make_uturn"] = tts ? "pegá la vuelta" : "make_uturn.ogg";
 	dictionary["make_uturn_wp"] = tts ? "Cuando se te cante, volvé" : "make_uturn_wp.ogg";
 
 	// ROUNDABOUTS
 	dictionary["prepare_roundabout"] = tts ? "entrá en la rotonda" : "prepare_roundabout.ogg";
 	dictionary["roundabout"] = tts ? "entrá en la rotonda" : "roundabout.ogg";
-	dictionary["then"] = tts ? ", despué " : "then.ogg";
+	dictionary["then"] = tts ? ", entonce, " : "then.ogg";
 	dictionary["and"] = tts ? " y " : "and.ogg";
 	dictionary["take"] = tts ? "agarrá la " : "take.ogg";
 	dictionary["exit"] = tts ? "salida" : "exit.ogg";
